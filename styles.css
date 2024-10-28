@@ -3,16 +3,20 @@ body {
     margin: 20px;
     line-height: 1.6;
 }
+
 h1, h2, h3 {
     color: #333;
 }
+
 .section {
     margin-bottom: 20px;
 }
+
 .links a {
     color: #007BFF;
     text-decoration: none;
 }
+
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
@@ -48,7 +52,7 @@ h3 {
 
 /* Section Styling */
 .section {
-    padding: 15px;
+    padding: 5px;
     margin-bottom: 20px;
     background: #fff;
     border-radius: 8px;
