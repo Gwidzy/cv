@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    color: #333;
+}
+.section {
+    margin-bottom: 20px;
+}
+.links a {
+    color: #007BFF;
+    text-decoration: none;
+}
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* General Body Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5em;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #34495E;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.3em;
+    color: #2C3E50;
+}
+
+/* Section Styling */
+.section {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styling */
+.links a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Contact Info */
+p {
+    font-size: 1.1em;
+}
+
+/* Header Container */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligns the image to the right */
+    margin-bottom: 20px;
+}
+
+/* Headshot Image Styling */
+.headshot {
+    width: 145px;
+    height: 145px;
+    border-radius: 42%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Experience Button Styling */
+.experience-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 45px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experience-button:hover {
+    background-color: #0056b3;
+}
+
+.main-buttons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 45px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 22px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.main-buttons:hover {
+    background-color: #0056b3;
+}
