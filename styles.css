@@ -30,6 +30,10 @@ body {
     line-height: 1.8;
 }
 
+.navBar {
+    border-bottom: 2px solid #007BFF;
+}
+
 /* Header Styling */
 h1 {
     font-size: 2.5em;
