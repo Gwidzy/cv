@@ -24,13 +24,17 @@ body {
     gap: 10px; /* Space between buttons and toggle */
 }
 
-.toggle-container {
-    position: relative;
-    top: 10px; /* Adjust for spacing between image and toggle */
+/* Align image and toggle button vertically */
+.image-toggle-container {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
 }
+
+.toggle-container {
+    margin-top: 10px; /* Add space between image and toggle */
+}
+
 
 h1, h2, h3 {
     color: var(--text-color);
