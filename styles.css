@@ -91,6 +91,10 @@ p {
     font-size: 1.1em;
 }
 
+.workXP {
+    font-size: 0.8em;
+}
+
 /* Header Container */
 .header {
     display: flex;
