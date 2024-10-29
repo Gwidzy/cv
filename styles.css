@@ -35,9 +35,8 @@ body {
 }
 
 .navButtons {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    display: grid;
+    place-content: center;
 }
 
 /* Header Styling */
@@ -110,8 +109,8 @@ p {
 
 /* Experience Button Styling */
 .home-button {
-    /*display: inline-flex;
-    align-items: center;*/
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
     width: 145px;
     height: 45px;
@@ -130,8 +129,8 @@ p {
 }
 
 .main-buttons {
-    /*display: inline-flex;
-    align-items: center;*/
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
     width: 145px;
     height: 45px;
