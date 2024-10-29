@@ -153,7 +153,7 @@ p {
 /* Fade-in animation */
 .fade-in {
     opacity: 0;
-    animation: fadeIn 0.6s forwards;
+    animation: fadeIn 1.5s forwards;
 }
 
 @keyframes fadeIn {
@@ -165,7 +165,7 @@ p {
 /* Fade-out animation */
 .fade-out {
     opacity: 1;
-    animation: fadeOut 0.6s forwards;
+    animation: fadeOut 1.5s forwards;
 }
 
 @keyframes fadeOut {
