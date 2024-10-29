@@ -32,6 +32,7 @@ body {
 
 .navBar {
     border-bottom: 2px solid #007BFF;
+    margin-bottom: 15px;
 }
 
 .navButtons {
