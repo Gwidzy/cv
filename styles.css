@@ -35,8 +35,8 @@ body {
 }
 
 .navButtons {
-    display: grid;
-    place-content: center;
+    max-width: fit-content;
+    margin-inline: auto;
 }
 
 /* Header Styling */
@@ -121,7 +121,7 @@ p {
     border-radius: 22px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    /*margin-bottom: 20px;*/
+    margin-bottom: 20px;
 }
 
 .home-button:hover {
