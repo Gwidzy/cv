@@ -1,20 +1,17 @@
+// Load and apply theme from localStorage
 document.addEventListener("DOMContentLoaded", () => {
-    // Select all nav links
-    const navLinks = document.querySelectorAll(".navButtons a");
+    const themeToggle = document.getElementById("theme-toggle");
+    const savedTheme = localStorage.getItem("theme") || "light";
 
-    navLinks.forEach(link => {
-        link.addEventListener("click", (e) => {
-            e.preventDefault();  // Prevents default link behavior
-            const href = link.getAttribute("href");
+    document.body.classList.add(savedTheme + "-mode");
+    themeToggle.checked = savedTheme === "dark";
 
-            // Add fade-out effect
-            document.body.classList.remove("fade-in");
-            document.body.classList.add("fade-out");
+    themeToggle.addEventListener("change", () => {
+        const newTheme = themeToggle.checked ? "dark" : "light";
+        
+        document.body.classList.remove("light-mode", "dark-mode");
+        document.body.classList.add(newTheme + "-mode");
 
-            // Delay navigation until fade-out is complete
-            setTimeout(() => {
-                window.location.href = href;
-            }, 600);  // Matches fade-out duration
-        });
+        localStorage.setItem("theme", newTheme);
     });
 });
