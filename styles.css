@@ -34,6 +34,11 @@ body {
     border-bottom: 2px solid #007BFF;
 }
 
+.navButtons {
+    display: flex;
+    align-items: center;
+}
+
 /* Header Styling */
 h1 {
     font-size: 2.5em;
@@ -103,7 +108,7 @@ p {
 }
 
 /* Experience Button Styling */
-.experience-button {
+.home-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +124,7 @@ p {
     margin-bottom: 20px;
 }
 
-.experience-button:hover {
+.home-button:hover {
     background-color: #0056b3;
 }
 
