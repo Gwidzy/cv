@@ -1,37 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    line-height: 1.6;
-}
-
-h1, h2, h3 {
-    color: #333;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-.links a {
-    color: #007BFF;
-    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color, #333); /* Fallback to ensure text color works */
+    background-color: var(--bg-color, #f8f9fa);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.8;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
 /* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-/* General Body Styling */
-body {
-    font-family: 'Lato', sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.8;
-}
-
 .navBar {
-    border-bottom: 2px solid #007BFF;
+    border-bottom: 2px solid var(--link-color);
     margin-bottom: 15px;
 }
 
@@ -40,42 +21,40 @@ body {
     margin-inline: auto;
 }
 
+h1, h2, h3 {
+    color: var(--text-color);
+}
+
 /* Header Styling */
 h1 {
     font-size: 2.5em;
-    color: #2C3E50;
     margin-bottom: 10px;
 }
 
 h2 {
     font-size: 1.8em;
-    color: #34495E;
     margin-bottom: 5px;
-    border-bottom: 2px solid #007BFF;
+    border-bottom: 2px solid var(--link-color);
     padding-bottom: 5px;
 }
 
 h3 {
     font-size: 1.3em;
-    color: #2C3E50;
 }
 
 /* Section Styling */
 .section {
     padding: 5px;
     margin-bottom: 20px;
-    background: #fff;
+    background: var(--section-bg, #fff); /* Ensure background changes */
+    color: var(--text-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-a {
-    text-decoration: none;
-  }
-
 /* Link Styling */
 .links a {
-    color: #007BFF;
+    color: var(--link-color);
     text-decoration: none;
     font-weight: 600;
     padding: 5px 10px;
@@ -99,7 +78,7 @@ p {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Aligns the image to the right */
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -113,13 +92,13 @@ p {
 }
 
 /* Experience Button Styling */
-.home-button {
+.home-button, .main-buttons {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 145px;
     height: 45px;
-    background-color: #007BFF;
+    background-color: var(--link-color);
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -129,32 +108,11 @@ p {
     margin-bottom: 20px;
 }
 
-.home-button:hover {
+.home-button:hover, .main-buttons:hover {
     background-color: #0056b3;
 }
 
-.main-buttons {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 145px;
-    height: 45px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 22px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    margin-left: 10px;
-    margin-bottom: 20px;
-}
-
-.main-buttons:hover {
-    background-color: #0056b3;
-}
-
-/* Fade-in animation */
+/* Fade-in and Fade-out animations */
 .fade-in {
     opacity: 0;
     animation: fadeIn 1.5s forwards;
@@ -166,7 +124,6 @@ p {
     }
 }
 
-/* Fade-out animation */
 .fade-out {
     opacity: 1;
     animation: fadeOut 1.5s forwards;
@@ -178,7 +135,7 @@ p {
     }
 }
 
-/* Basic Styling for Toggle Switch */
+/* Toggle Switch Styling */
 .toggle-container {
     position: absolute;
     top: 20px;
@@ -231,6 +188,7 @@ body.light-mode {
     --bg-color: #f8f9fa;
     --text-color: #333;
     --link-color: #007BFF;
+    --section-bg: #ffffff;
 }
 
 /* Dark Mode */
@@ -238,13 +196,6 @@ body.dark-mode {
     --bg-color: #1a1a2e;
     --text-color: #f8f9fa;
     --link-color: #66d9ff;
+    --section-bg: #333; /* Darker background for sections */
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-a {
-    color: var(--link-color);
-}
