@@ -19,6 +19,15 @@ body {
 .navButtons {
     max-width: fit-content;
     margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons and toggle */
+}
+
+.toggle-container {
+    position: relative; /* Remove absolute positioning */
+    top: 0; /* Reset positioning to inline */
+    right: 0;
 }
 
 h1, h2, h3 {
@@ -136,11 +145,6 @@ p {
 }
 
 /* Toggle Switch Styling */
-.toggle-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
 
 #theme-toggle {
     display: none;
