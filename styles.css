@@ -230,3 +230,8 @@ body.dark-mode {
     align-items: center;
     justify-content: center;
   }
+
+  .location-img {
+    width: 30px;
+    height: 30px;
+  }
