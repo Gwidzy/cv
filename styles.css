@@ -178,11 +178,15 @@ p {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: rgb(200, 5, 5);
+    background: #007BFF;
     border-radius: 50%;
     transition: 0.3s;
     top: 1px;
     left: 1px;
+}
+
+.toggle-slider::after {
+    background: #66d9ff;
 }
 
 #theme-toggle:checked + .toggle-label .toggle-slider {
