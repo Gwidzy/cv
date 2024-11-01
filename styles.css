@@ -185,18 +185,12 @@ p {
     left: 1px;
 }
 
-.toggle-slider::after {
-    background: #66d9ff;
-}
-
 #theme-toggle:checked + .toggle-label .toggle-slider {
     background: #333;
 }
 
 #theme-toggle:checked + .toggle-label .toggle-slider::before {
     transform: translateX(20px);
-}
-#theme-toggle:checked + .toggle-label .toggle-slider::after {
     background: #66d9ff;
 }
 
