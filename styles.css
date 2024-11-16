@@ -237,3 +237,13 @@ body.dark-mode {
     width: 16px;
     height: 16px;
   }
+
+  .light-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .night-icon {
+    width: 14px;
+    height: 14px;
+  }
