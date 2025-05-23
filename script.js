@@ -15,3 +15,23 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.setItem("theme", newTheme);
     });
 });
+
+// Age counter
+const birthDate = new Date("2000-02-03T00:00:00");
+
+const updateAge = () => {
+    const now = new Date();
+    const day = now.getDate();
+    const month = now.getMonth() + 1;
+    // const year = now.getFullYear;
+
+    if (birthDate.getMonth() <= month && birthDate.getDay() <= day) {
+        let age = now - birthDate;
+        //age = age + 1;
+        document.getElementById("age").textContent = `${age}`;
+
+        return;
+    }
+};
+
+updateAge(); // Run it once on load
