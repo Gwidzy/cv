@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Age counter
-const birthDate = new Date("2000-02-03T00:00:00");
+const birthDate = new Date("2000-02-03");
 
 const updateAge = () => {
     const now = new Date();
@@ -26,9 +26,10 @@ const updateAge = () => {
     // const year = now.getFullYear;
 
     if (birthDate.getMonth() <= month && birthDate.getDay() <= day) {
-        let age = now - birthDate;
+        let age = 24 + 1;
+    
         //age = age + 1;
-        document.getElementById("age").textContent = `${age}`;
+        document.getElementById("age").textContent = `Age: ${age} | Born on the 3rd of February, 2000`;
 
         return;
     }
