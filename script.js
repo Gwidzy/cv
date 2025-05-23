@@ -26,7 +26,7 @@ const updateAge = () => {
     // const year = now.getFullYear;
 
     if (birthDate.getMonth() <= month && birthDate.getDay() <= day) {
-        let age = 24 + 1;
+        let age = age++;
     
         //age = age + 1;
         document.getElementById("age").textContent = `Age: ${age} | Born on the 3rd of February, 2000`;
