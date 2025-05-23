@@ -17,18 +17,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Age counter
-const birthDate = new Date("2000-02-03");
-
 const updateAge = () => {
-    const now = new Date();
-    const day = now.getDate();
-    const month = now.getMonth() + 1;
-    // const year = now.getFullYear;
+    const birthDate     = new Date("2000-02-03");
+    const birthDay      = birthDate.getDate();
+    const birthMonth    = birthDate.getMonth() + 1;
+    const birthYear     = birthDate.getFullYear();
 
-    if (birthDate.getMonth() <= month && birthDate.getDay() <= day) {
-        let age = age++;
-    
-        //age = age + 1;
+    const currentDate   = new Date();
+    const currentDay    = currentDate.getDate();
+    const currentMonth  = currentDate.getMonth() + 1;
+    const currentYear   = currentDate.getFullYear();
+
+    if (birthMonth <= currentMonth && birthDay <= currentDay) {
+        let age = currentYear - birthYear;
         document.getElementById("age").textContent = `Age: ${age} | Born on the 3rd of February, 2000`;
 
         return;
