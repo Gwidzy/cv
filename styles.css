@@ -251,14 +251,15 @@ body.dark-mode {
     align-items: center;
     justify-content: center;
   }
-  
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 0.5rem;
+
+.reference-block code {
+  white-space: pre;
+  font-family: monospace;
+  display: block;
+  color: #eee; /* Dracula-style */
 }
 
-td {
-  padding: 0.4rem 0.8rem;
-  vertical-align: top;
+.reference-block a {
+  color: #8be9fd; /* optional: Dracula link color */
+  text-decoration: none;
 }
