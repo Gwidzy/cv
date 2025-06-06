@@ -251,3 +251,14 @@ body.dark-mode {
     align-items: center;
     justify-content: center;
   }
+  
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+td {
+  padding: 0.4rem 0.8rem;
+  vertical-align: top;
+}
