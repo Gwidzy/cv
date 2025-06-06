@@ -215,11 +215,6 @@ a:not(.home-button):not(.main-buttons):not(.download-btn):hover {
     text-decoration: underline;
 }
 
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
 .download-btn {
     color: white;
     padding: 10px 20px;
