@@ -203,13 +203,21 @@ body.light-mode {
 }
 
 /* Dark Mode */
+/* Dark Mode */
 body.dark-mode {
     --bg-color: #1a1a2e;
     --text-color: #f8f9fa;
-    --link-color: #66d9ff;
-    --section-bg: #333; /* Darker background for sections */
+    --link-color: #9adcff; 
+    --section-bg: #333;
 }
 
+body.light-mode .links a:hover {
+    color: #0056b3;
+}
+
+body.dark-mode .links a:hover {
+    color: #ffffff;
+}
 
 .download-btn {
     color: white;
