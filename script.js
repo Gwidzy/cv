@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Age counter
+// Age counter - because I don't want to have to do this once a year...
 const updateAge = () => {
     const birthDate     = new Date("2000-02-03");
     const birthDay      = birthDate.getDate();
@@ -36,4 +36,85 @@ const updateAge = () => {
     }
 };
 
-updateAge(); // Run it once on load
+updateAge();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ¯\_(⊙︿⊙)_/¯
