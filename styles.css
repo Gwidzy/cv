@@ -251,15 +251,3 @@ body.dark-mode {
     align-items: center;
     justify-content: center;
   }
-
-.reference-block code {
-  white-space: pre;
-  font-family: monospace;
-  display: block;
-  color: #eee; /* Dracula-style */
-}
-
-.reference-block a {
-  color: #8be9fd; /* optional: Dracula link color */
-  text-decoration: none;
-}
