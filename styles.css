@@ -1,14 +1,13 @@
 body {
     font-family: 'Lato', sans-serif;
-    color: var(--text-color, #333); /* Fallback to ensure text color works */
+    color: var(--text-color, #333);
     background-color: var(--bg-color, #f8f9fa);
     margin: 0;
     padding: 20px;
     line-height: 1.8;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 .navBar {
@@ -21,10 +20,9 @@ body {
     margin-inline: auto;
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between buttons and toggle */
+    gap: 10px; 
 }
 
-/* Align image and toggle button vertically */
 .image-toggle-container {
     display: flex;
     flex-direction: column;
@@ -32,7 +30,7 @@ body {
 }
 
 .toggle-container {
-    margin-top: 10px; /* Add space between image and toggle */
+    margin-top: 10px;
 }
 
 
@@ -40,7 +38,6 @@ h1, h2, h3 {
     color: var(--text-color);
 }
 
-/* Header Styling */
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -57,17 +54,15 @@ h3 {
     font-size: 1.3em;
 }
 
-/* Section Styling */
 .section {
     padding: 5px;
     margin-bottom: 20px;
-    background: var(--section-bg, #fff); /* Ensure background changes */
+    background: var(--section-bg, #fff);
     color: var(--text-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Link Styling */
 .links a {
     color: var(--link-color);
     text-decoration: none;
@@ -80,7 +75,6 @@ h3 {
     text-decoration: underline;
 }
 
-/* Contact Info */
 p {
     font-size: 1.1em;
 }
@@ -89,7 +83,6 @@ p {
     font-size: 1.0em;
 }
 
-/* Header Container */
 .header {
     display: flex;
     align-items: center;
@@ -97,7 +90,6 @@ p {
     margin-bottom: 20px;
 }
 
-/* Headshot Image Styling */
 .headshot {
     width: 145px;
     height: 145px;
@@ -106,7 +98,6 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Experience Button Styling */
 .home-button, .main-buttons {
     display: inline-flex;
     align-items: center;
@@ -127,7 +118,6 @@ p {
     background-color: #0056b3;
 }
 
-/* Fade-in and Fade-out animations */
 .fade-in {
     opacity: 0;
     animation: fadeIn 1.5s forwards;
@@ -149,8 +139,6 @@ p {
         opacity: 0;
     }
 }
-
-/* Toggle Switch Styling */
 
 #theme-toggle {
     display: none;
@@ -194,7 +182,6 @@ p {
     background: #66d9ff;
 }
 
-/* Light Mode (Default) */
 body.light-mode {
     --bg-color: #f8f9fa;
     --text-color: #333;
@@ -202,8 +189,6 @@ body.light-mode {
     --section-bg: #ffffff;
 }
 
-/* Dark Mode */
-/* Dark Mode */
 body.dark-mode {
     --bg-color: #1a1a2e;
     --text-color: #f8f9fa;
@@ -219,10 +204,15 @@ body.dark-mode .links a:hover {
     color: #ffffff;
 }
 
-a {
+a:not(.home-button):not(.main-buttons):not(.download-btn) {
     color: var(--link-color);
     text-decoration: none;
     font-weight: 600;
+}
+
+a:not(.home-button):not(.main-buttons):not(.download-btn):hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
 
 a:hover {
