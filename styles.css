@@ -114,8 +114,10 @@ p {
     margin-bottom: 20px;
 }
 
-.home-button:hover, .main-buttons:hover, .download-btn:hover {
-    background-color: #0056b3;
+.home-button:hover,
+.main-buttons:hover, 
+.download-btn:hover {
+    background-color: var(--hover-color);
 }
 
 .fade-in {
@@ -186,6 +188,7 @@ body.light-mode {
     --bg-color: #f4eaff;
     --text-color: #2a003f;
     --link-color: #9b5de5;
+    --hover-color: #7b2cbf;
     --section-bg: #f7f0ff;
 }
 
@@ -193,6 +196,7 @@ body.dark-mode {
     --bg-color: #1a1023;
     --text-color: #f8e9ff;
     --link-color: #c77dff;
+    --hover-color: #b26cff;
     --section-bg: #2a113d;
 }
 
