@@ -166,7 +166,7 @@ p {
     position: absolute;
     width: 18px;
     height: 18px;
-    background: #007BFF;
+    background: #9b5de5;
     border-radius: 50%;
     transition: 0.3s;
     top: 1px;
@@ -179,30 +179,33 @@ p {
 
 #theme-toggle:checked + .toggle-label .toggle-slider::before {
     transform: translateX(20px);
-    background: #66d9ff;
+    background: #c77dff;
 }
 
 body.light-mode {
-    --bg-color: #f8f9fa;
-    --text-color: #333;
-    --link-color: #007BFF;
-    --section-bg: #ffffff;
+    --bg-color: #f4eaff;
+    --text-color: #2a003f;
+    --link-color: #9b5de5;
+    --section-bg: #f7f0ff;
 }
 
 body.dark-mode {
-    --bg-color: #1a1a2e;
-    --text-color: #f8f9fa;
-    --link-color: #9adcff; 
-    --section-bg: #333;
+    --bg-color: #1a1023;
+    --text-color: #f8e9ff;
+    --link-color: #c77dff;
+    --section-bg: #2a113d;
 }
 
-body.light-mode .links a:hover {
-    color: #0056b3;
+body.light-mode .links a:hover,
+a:not(.home-button):not(.main-buttons):not(.download-btn):hover {
+    color: #7b2cbf;
+    text-decoration: underline;
 }
 
 body.dark-mode .links a:hover {
     color: #ffffff;
 }
+
 
 a:not(.home-button):not(.main-buttons):not(.download-btn) {
     color: var(--link-color);
