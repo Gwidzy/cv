@@ -263,6 +263,59 @@ a:not(.home-button):not(.main-buttons):not(.download-btn):hover {
     justify-content: center;
   }
 
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navButtons {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .home-button, .main-buttons, .download-btn {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .headshot {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+
+    h2 {
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+    }
+
+    h3 {
+        font-size: clamp(1rem, 3.5vw, 1.3rem);
+    }
+
+    p, .workXP {
+        font-size: 1em;
+    }
+
+    .section {
+        margin-inline: 10px;
+        padding: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 
 
