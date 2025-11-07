@@ -210,7 +210,6 @@ body.dark-mode .links a:hover {
     color: #ffffff;
 }
 
-
 a:not(.home-button):not(.main-buttons):not(.download-btn) {
     color: var(--link-color);
     text-decoration: none;
